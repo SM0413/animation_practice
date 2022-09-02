@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { motion, useMotionValue } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+import { useEffect } from "react";
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -20,10 +21,13 @@ const Box = styled(motion.div)`
 
 function App() {
   const x = useMotionValue(0);
-  console.log(x);
+  const potato = useTransform(x, [-700, 0, 700], [2, 1, 0.1]);
+  useEffect(() => {
+    potato.onChange(() => console.log(potato.get()));
+  });
   return (
     <Wrapper>
-      <Box style={{ x }} drag="x" dragSnapToOrigin />
+      <Box style={{ x, scale: potato }} drag="x" dragSnapToOrigin />
     </Wrapper>
   );
 }
