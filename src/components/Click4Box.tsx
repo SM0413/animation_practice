@@ -38,7 +38,7 @@ const Overlay = styled(motion.div)`
   align-items: center;
 `;
 
-export function Click4Box() {
+function Click4Box() {
   const [id, setId] = useState<null | string>(null);
   return (
     <Wrapper>
@@ -62,3 +62,5 @@ export function Click4Box() {
     </Wrapper>
   );
 }
+
+export default Click4Box;
