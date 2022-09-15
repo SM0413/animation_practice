@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/animation_practice/static/js/main.cb330dc0.js",
+    "main.js": "/animation_practice/static/js/main.22da5b10.js",
     "index.html": "/animation_practice/index.html",
-    "main.cb330dc0.js.map": "/animation_practice/static/js/main.cb330dc0.js.map"
+    "main.22da5b10.js.map": "/animation_practice/static/js/main.22da5b10.js.map"
   },
   "entrypoints": [
-    "static/js/main.cb330dc0.js"
+    "static/js/main.22da5b10.js"
   ]
 }
